@@ -2,22 +2,23 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { StyledHeader } from "./Header.styled";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <StyledHeader>
-            <a href="/">
-                <h1>WEB shop</h1>
-            </a>
+            <h1>
+                <a href="/">WEB shop</a>
+            </h1>
 
             <nav className="navBar">
-                <a href="/New">New!</a>
-                <a href="/Men">Men</a>
-                <a href="/Women">Women</a>
-                <a href="/Sale">Sale!</a>
-                <a href="/ShoppingCart">
+                <Link to="/New">New!</Link>
+                <Link to="/Men">Men</Link>
+                <Link to="/Women">Women</Link>
+                <Link to="/Sale">Sale!</Link>
+                <Link to="/ShoppingCart">
                     <FontAwesomeIcon icon={faCartShopping} />
-                </a>
+                </Link>
             </nav>
         </StyledHeader>
     );

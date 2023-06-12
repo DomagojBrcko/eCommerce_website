@@ -1,12 +1,12 @@
 import React from "react";
-import ClothingStrip from "../Components/ChlothingStrip/ClothingStrip";
+import ClothingCarousel from "../Components/ChlothingCarousel/ClothingCarousel";
 import Shop from "../Components/Shop/Shop";
 
-export default function Home() {
+export const Home = () => {
     return (
         <>
-            <ClothingStrip />
+            <ClothingCarousel />
             <Shop />
         </>
     );
-}
+};

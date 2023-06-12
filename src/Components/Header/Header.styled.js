@@ -4,7 +4,12 @@ export const StyledHeader = styled.header`
     position: fixed;
     background-color: white;
     width: 100%;
-    z-index: 10;
+    z-index: 1001;
+    @media (max-width: 464px) {
+        margin-bottom: 30px;
+        z-index: 0;
+        position: relative;
+    }
 
     .navBar {
         display: flex;
@@ -21,5 +26,8 @@ export const StyledHeader = styled.header`
         color: red;
         transform: scale(1.2);
         transition-duration: 0.5s;
+    }
+    h1 > a {
+        font-size: 2rem;
     }
 `;

@@ -7,7 +7,7 @@ export default function Footer() {
             <div>18.04.2023 Zagreb</div>
             <div>random@mail.com</div>
             <div>0997773333</div>
-            <div>logo</div>
+            <h1>logo</h1>
         </StyledFooter>
     );
 }
